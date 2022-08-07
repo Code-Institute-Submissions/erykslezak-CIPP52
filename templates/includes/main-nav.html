@@ -18,13 +18,13 @@
         </li>
 
         <li class="nav-item">
-            <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="#" id="accessories-link" aria-haspopup="true" aria-expanded="false">
+            <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="{% url 'products' %}?category=accessories" id="accessories-link" aria-haspopup="true" aria-expanded="false">
                 Accessories
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="#" id="lighting-link" aria-haspopup="true" aria-expanded="false">
+            <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="{% url 'products' %}?category=lighting" id="lighting-link" aria-haspopup="true" aria-expanded="false">
                 Lighting
             </a>
         </li>
@@ -34,8 +34,8 @@
                 Water Care
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="water-care-link">
-                <a href="" class="dropdown-item">Salts and Additives</a>
-                <a href="" class="dropdown-item">Water Filters</a>
+                <a href="{% url 'products' %}?category=salt_additives" class="dropdown-item">Salts and Additives</a>
+                <a href="{% url 'products' %}?category=water_filters" class="dropdown-item">Water Filters</a>
             </div>
         </li>
 
@@ -44,9 +44,9 @@
                 Test Kits
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="test-kits-link">
-                <a href="" class="dropdown-item">Reagents</a>
-                <a href="" class="dropdown-item">Calibration/Storage Solutions</a>
-                <a href="" class="dropdown-item">Water Analysis Kits</a>
+                <a href="{% url 'products' %}?category=reagents" class="dropdown-item">Reagents</a>
+                <a href="{% url 'products' %}?category=calibration_storage_solutions" class="dropdown-item">Calibration/Storage Solutions</a>
+                <a href="{% url 'products' %}?category=water_analysis_kits" class="dropdown-item">Water Analysis Kits</a>
             </div>
         </li>
     </ul>
