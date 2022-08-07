@@ -54,6 +54,24 @@ body {
     border: 1px solid black !important;
 }
 
+/* Navbar/header */
+.nav-color,
+.nav-color > a {
+    color: rgb(210,227,242);
+}
+
+.nav-color:hover {
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #11519B;
+}
+
+.nav-bar {
+    background-color: #429AD2;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
