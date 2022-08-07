@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="text-uppercase">Products</h2>
+                <h2 class="text-uppercase">Products > {% for cat in current_categories %} {{ cat.friendly_name }} {% endfor %}</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
