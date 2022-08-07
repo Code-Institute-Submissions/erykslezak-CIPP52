@@ -20,8 +20,9 @@
             </div>
         </div>
         <div class="row mx-2">
-            {% if bag_items %}
+            {% if cart_items %}
                 <div class="col-9 table-responsive rounded d-none d-md-block">
+                    {{ cart_items }}
                 </div>
             {% else %}
                 <p class="lead mb-5">Your cart is empty.</p>
