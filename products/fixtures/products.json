@@ -1,0 +1,223 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI731315",
+            "name": "Glass Cuvettes and Caps for Checker HC Colorimeters (set of 2)",
+            "short_description": "",
+            "description": "The HI731315 are spare glass cuvettes and plastic caps used with the HI7XX Checker® HC colorimeters. Each cuvette has a 10 ml level mark to measure the appropriate volume. The HI731315 includes 2 cuvettes and 2 caps.10 ml level mark for adding correct volume.Test more samples and average your results for the best accuracy.Perfect for replacing scratched or discolored cuvettes.",
+            "price": 11.96,
+            "category": 1,
+            "image": "HI731315-Cuvettes.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-702-25",
+            "name": "Hanna Copper High Range Reagents HI-702-25",
+            "short_description": "The HI-702-25 are the replacement reagents for the HI-702 Copper High Range Checker®HC. These high-quality reagents are clearly marked with the lot number and expiry date on each packet for traceability.",
+            "description": "The HI-702-25 are high-quality reagents that are pre-measured, allowing for users to achieve fast and accurate measurements with their Copper High Range Checker® HC. These reagents follow the Bicinchoninate Method in which the reaction between copper and the reagent causes a purple tint in the sample. By simply adding the packet of HI-702-25 reagent to the sample, the reaction will take place and the HI-702 will determine the concentration from the colour that is produced. The results will be displayed in ppm of copper. These reagents are designed to be used with samples that have an expected range of 0.00 to 5.00 ppm copper.",
+            "price": 18.5,
+            "category": 5,
+            "image": "HI-702-25-reagents.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-782",
+            "name": "Hanna HI-782 Marine High Range Nitrate Checker",
+            "short_description": "",
+            "description": "The HI-782 Marine Nitrate High Range Colorimeter is specifically designed to quickly and accurately determine high levels of nitrate for saltwater aquariums and marine applications. With a digital read out, there is no more struggling to determine colours visually.",
+            "price": 75.5,
+            "category": 7,
+            "image": "HI-782-hrnitrate.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-782-25",
+            "name": "Hanna HI-782-25 Marine High Range Nitrate Checker Reagents",
+            "short_description": "",
+            "description": "It is important that the sample does not contain any debris. Whenever the cuvette is placed into the measurement cell, it must be dry outside and completely free of fingerprints, oil or dirt. Wipe it thoroughly with HI-731318 or a lint-free cloth prior to insertion. Shaking the cuvette can generate bubbles, causing higher readings. To obtain accurate measurements, remove such bubbles by swirling or by gently tapping the cuvette. Do not let the reacted sample stand for too long after reagent is added, or accuracy will be lost. After the reading, it is important to discard the sample immediately, otherwise the glass might become permanently stained.",
+            "price": 26.5,
+            "category": 5,
+            "image": "HI-782-25-reagents.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI783-25",
+            "name": "Hanna HI783-25 Magnesium reagent",
+            "short_description": "Hanna HI783-25 Magnesium reagent (seawater) for usage with the Hanna HI783 magnesium checker",
+            "description": "Magnesium is the third most abundant ion in seawater, surpassed only by sodium and chloride. Its abundance is critical for the formation of weak ion pairs with carbonate ions. This allows calcium and carbonate ions to be available for uptake by corals and invertebrates. Low magnesium levels result in low or unstable calcium and alkalinity levels. Signs of low magnesium levels include precipitation of calcium as insoluble calcium carbonate and impaired growth and health of the inhabitants.",
+            "price": 28.5,
+            "category": 5,
+            "image": "HI-783-25-reagents.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-70004P",
+            "name": "HI-70004P pH 4.01 Buffer Sachets, 25 x 20 mL sachets",
+            "short_description": "",
+            "description": "Achieve accurate pH readings and check your meter and electrode is functioning correctly with Hanna buffer solutions. Available in convenient, ready-made pH values 4.01, 6.86, 7.01, 9.28 and 10.01, Hanna has a certified value calibration solution with an accuracy of +/- 0.01pH @ 25◦C for all requirements.",
+            "price": 41.16,
+            "category": 6,
+            "image": "HI-70004P-sachets.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-70007P",
+            "name": "HI-70007P pH 7.01 Buffer Sachets, 25 x 20 mL sachets",
+            "short_description": "",
+            "description": "Achieve accurate pH readings and check your meter and electrode is functioning correctly with Hanna buffer solutions. Available in convenient, ready-made pH values 4.01, 6.86, 7.01, 9.28 and 10.01, Hanna has a certified value calibration solution with an accuracy of +/- 0.01pH @ 25◦C for all requirements.",
+            "price": 41.16,
+            "category": 6,
+            "image": "HI-70007P-sachets.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-70024P",
+            "name": "HI-70024P Salinity Standard 35.00ppt, 25 x 20ml sachets",
+            "short_description": "",
+            "description": "HI-70024p is a premium quality calibration solution for seawater salinity in 25 x 20ml sachets.",
+            "price": 42.12,
+            "category": 6,
+            "image": "HI-70024P-sachets.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-70300M",
+            "name": "HI-70300M pH Electrode Storage Solution, 230 mL",
+            "short_description": "",
+            "description": "Keep one step ahead on the maintenance front by always storing an electrode in Hanna Storage Solution.Hanna Storage Solution will keep your electrode in tip top condition by not allowing the sensor tip and the reference junction to dry out. It will also minimise any bacterial growth while not in use – all vital for an optimum response time and result.",
+            "price": 26,
+            "category": 6,
+            "image": "HI-70300M-sachets.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-70300S",
+            "name": "HI-70300S Electrode Storage Solution 25ml",
+            "short_description": "",
+            "description": "Keep one step ahead on the maintenance front by always storing an electrode in Hanna Storage Solution.Hanna Storage Solution will keep your electrode in tip top condition by not allowing the sensor tip and the reference junction to dry out. It will also minimise any bacterial growth while not in use – all vital for an optimum response time and result.pH or Oxide Reduction Potential (ORP) electrodes should never be stored in distilled or deionised water as it will shorten the life of the sensor. Also, check our range of special storage solutions. For example: Sodium ISE Storage solution.",
+            "price": 10.53,
+            "category": 6,
+            "image": "HI-70300S-sachets.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-713",
+            "name": "HI-713 Phosphate Low Range Handheld Colorimeter – Checker®HC",
+            "short_description": "",
+            "description": "Ideal for coral reef tanks and fresh and salt water aquariums. Phosphate directly inhibits calcification by corals and coralline algae – even at low levels. The health of plants in freshwater aquaria will also be impaired by raised levels of phosphate in the water. Phosphate naturally occurs as waste decomposes in coral reef, salt and fresh water aquariums. While it does not directly harm fish when levels are high, resulting green algae growth can deplete the oxygen levels in water. Corals can lose their colour due to the effects of brown algae.",
+            "price": 77.5,
+            "category": 7,
+            "image": "HI-713-checker.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "HI-713-25",
+            "name": "HI-713-25 Reagents for HI-713 Phosphate Pocket Checker x 25 tests",
+            "short_description": "",
+            "description": "The HI-713-25 are the replacement reagents for the HI-713 Phosphate Low Range Checker® HC. 25 Tests in this kit. These high-quality reagents are clearly marked with the lot number and expiry date on each packet for traceability.",
+            "price": 12.96,
+            "category": 5,
+            "image": "HI-713-25-reagents.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "MR-1812-75 75GPD",
+            "name": "75GPD (US Gallons) Reverse Osmosis Membrane",
+            "short_description": "",
+            "description": "",
+            "price": 30,
+            "category": 4,
+            "image": "MR-1812-75-membrane.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "RO-HO-0020",
+            "name": "10 inch Water Filter Housing, White cap / Clear housing",
+            "short_description": "",
+            "description": "",
+            "price": 28,
+            "category": 4,
+            "image": "RO-HO-0020-housing.jpeg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "FIL-RO-0087",
+            "name": "Aquafilter 10″ CTO Block Activated Carbon Water Filter Cartridge",
+            "short_description": "",
+            "description": "Carbon blocks manufactured by Aquafilter Europe are made from the highest quality materials to deliver the best quality and performance. In order to improve the water purification process, a mixture of bituminous and coconut shell carbons is utilized. Both comply to the strict standards of the National Sanitation Foundation (NSF).",
+            "price": 7,
+            "category": 4,
+            "image": "FIL-RO-0087-filter.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "",
+            "name": "Modern Reef Professional Reef Salt 22kg",
+            "short_description": "Designed to meet the special requirements of modern reefing using pure, fast-dissolving pharmaceutical-grade salts.",
+            "description": "Designed to meet the special requirements of modern reefing using pure, fast-dissolving pharmaceutical-grade salts. Contains all trace elements found in the natural seawater with a small secret tweak used by Euro Corals for years. A perfectly-balanced reef salt that will promote better calcification, growth, and colouration to all corals. Ideal to start a new reef aquarium, reduce unwanted heavy metals, or for regular partial water change to help export organic pollutants, phenols, humic substances and nettle poisons produced by some corals or other organisms.",
+            "price": 104.59,
+            "category": 3,
+            "image": "Professional-Reef-Salt-22kg.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "",
+            "name": "Modern Reefs All-in-one Reef Keeping System 4x5L",
+            "short_description": "(Base KH1, Base KH2, Base CAL, Base MAG)",
+            "description": "Contains all essential trace elements found in natural seawater, organic and inorganic micronutrients and amino acids in one product! All you need to maintain a thriving and colourful reef aquarium in a special secret proportional formula. Developed to enhance red, pink, blue, purple and especially yellow/orange pigments and extreme polyp extension in all types of corals. Designed for blue side spectrum reef aquariums for better colour excitation and stimulation, but can be used in all type of reef keeping conditions. With the correct white spectrum and light schedule, this product can increase growth by 2x the normal rate but will also be consumed by approximately 1.5-2x. It’s a 4 equal parts dosing system by proportional consumption of KH (@ 7.2-8.5dKH) to avoid any overdose. Aiming to make professional and modern reef keeping simple and easy.",
+            "price": 111.92,
+            "category": 3,
+            "image": "Reef-Keeping-System-5L.jpg"
+        }
+    }
+]
