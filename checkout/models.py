@@ -9,13 +9,13 @@ def increment_order_number():
     last_order = Order.objects.all().order_by('id').last()
     if not last_order:
         return 'ORD0001'
-    order_no = last_order.order_no
-    order_int = int(order_no.split('ORD')[-1])
+    order_number = last_order.order_number
+    order_int = int(order_number.split('ORD')[-1])
     width = 4
     new_order_int = order_int + 1
     formatted = (width - len(str(new_order_int))) * "0" + str(new_order_int)
-    new_order_no = 'ORD' + str(formatted)
-    return new_order_no  
+    order_number = 'ORD' + str(formatted)
+    return order_number
 
 
 class Order(models.Model):
@@ -46,6 +46,15 @@ class Order(models.Model):
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
+
+    def save(self, *args, **kwargs):
+        """
+        Override the original save method to set the order number
+        if it hasn't been set already.
+        """
+        if not self.order_number:
+            self.order_number = increment_order_number()
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.order_number
