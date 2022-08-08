@@ -122,6 +122,23 @@ input[name='q']::placeholder {
     color: white !important;
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: absolute;
+    top: 10rem;
+    right: 500px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -154,5 +171,14 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 602px) {
+    .message-container {
+        position: absolute;
+        top: 10rem;
+        right: 0px;
+        z-index: 99999999999;
     }
 }
