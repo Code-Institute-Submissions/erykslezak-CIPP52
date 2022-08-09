@@ -12,7 +12,7 @@
 {% block content %}
 <div class="row">
     <div class="product-container col-10 offset-1">
-        <p class="text-center product-name">Aquaria Supplies New In</p>
+        <h2 class="text-center product-name">Aquaria Supplies New In</h2>
         <div class="row">
             {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -40,7 +40,7 @@
                                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>                                         
                                     {% if request.user.is_superuser %}
                                         <small class="ml-3">
-                                            <a href="">Edit</a> | 
+                                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                             <a class="text-danger" href="">Delete</a>
                                         </small>
                                     {% endif %}
