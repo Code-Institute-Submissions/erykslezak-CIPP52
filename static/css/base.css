@@ -31,19 +31,26 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
+.btn-main {
+    background: #007bff;
     color: white;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
+.btn-main:hover,
+.btn-main:active,
+.btn-main:focus {
+    background: #005bcc;
     color: white;
+}
+
+.btn-outline-main:hover,
+.btn-outline-main:active,
+.btn-outline-main:focus {
+    background: black;
+    color: white !important;
 }
 
 .text-black {
@@ -52,6 +59,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 .overlay {
@@ -65,6 +76,10 @@ body {
 }
 
 /* Navbar/header */
+ul {
+    list-style-type: none;
+}
+
 .nav-color,
 .nav-color > a {
     color: rgb(210,227,242);
@@ -94,6 +109,38 @@ input[name='q']::placeholder {
     overflow-x: hidden;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.dropdown-item:hover {
+    background: #429AD2;
+    color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+ .product-name {
+    font-weight: bold;
+    font-size: 1.8rem;
+ }
+
 /* Back to top button */
 .btt-button {
     height: 42px;
@@ -109,16 +156,16 @@ input[name='q']::placeholder {
     cursor: pointer;
 }
 
-.btn-outline-black {
+.btn-outline-main {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
+.btn-outline-main:hover,
+.btn-outline-main:active,
+.btn-outline-main:focus {
+    background: #005bcc;
     color: white !important;
 }
 
@@ -177,7 +224,7 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
+    background-color: #007bff;
     border: 1px solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -191,7 +238,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
+    background-color: #005bcc;
     border-color: #222;
 }
 
@@ -237,6 +284,12 @@ input[name='q']::placeholder {
     }
   }
 
+@media (max-width: 1111px) {
+    .nav-font {
+        font-size: 0.85rem;
+    }
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -261,13 +314,75 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-main.rounded-0,
+    .btn.btn-main.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-main.rounded-0.btn-lg,
+    .btn.btn-main.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
+    .nav-bar {
+        margin-top: 1.55rem;
+        background-color: transparent;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 70px;
+        z-index: 900;
+    }
+
+    .navbar-nav {
+        background-color: #FFFFFF;
+    }
+    .nav-color,
+    .nav-color > a {
+        color: #007bff;
+    }
+
 }
 
-@media (max-width: 602px) {
+@media (max-width: 425px) {
+
+    #delivery-banner h4 {
+        font-size: .6rem;
+    }
+
     .message-container {
-        position: absolute;
-        top: 10rem;
-        right: 0px;
-        z-index: 99999999999;
+        top: 5rem;
+    }
+
+    .display-block {
+        display: block;
     }
 }
