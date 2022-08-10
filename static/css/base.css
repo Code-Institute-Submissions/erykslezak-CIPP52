@@ -246,6 +246,10 @@ input[type=number] {
 	color: #17a2b8; /* text-info */
 }
 
+.allauth-center {
+    justify-content: center;
+    text-align: center;
+}
 /* Product Form */
 
 .btn-file {

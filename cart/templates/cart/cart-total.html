@@ -1,0 +1,11 @@
+<h5>Cart Totals</h5>
+<hr>
+<h6>Subotal: <strong class="float-right">€{{ total|floatformat:2 }}</strong></h6>
+<h6>Delivery: <span class="float-right">€{{ delivery|floatformat:2 }}</span></h6>
+<h5 class="mt-4">Total: <strong class="float-right">€{{ grand_total|floatformat:2 }}</strong></h5>
+{% if free_delivery_delta > 0 %}
+    <p class="mb-1 text-danger">
+        You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
+    </p>
+{% endif %}
+<hr>
