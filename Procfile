@@ -1,0 +1,1 @@
+web: gunicorn aquaria_supplies.wsgi:application
