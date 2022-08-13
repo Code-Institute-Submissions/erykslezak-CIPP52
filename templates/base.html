@@ -106,13 +106,13 @@
             </div>
         </div>
         <div class="row nav-bar">
-            <nav class="navbar navbar-expand-lg mx-auto nav-color py-0 nav-font">
+            <div class="navbar navbar-expand-lg mx-auto nav-color py-0 nav-font">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
-            </nav>
+            </div>
         </div>
     </header>
     {% if messages %}
@@ -140,7 +140,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     <script>

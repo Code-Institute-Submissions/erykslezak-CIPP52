@@ -374,6 +374,9 @@ input[type=number] {
         color: #007bff;
     }
 
+    .mobile-width {
+        width: 50%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -388,5 +391,9 @@ input[type=number] {
 
     .display-block {
         display: block;
+    }
+
+    .dropdown-menu {
+        left: -6rem;
     }
 }
