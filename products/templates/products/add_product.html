@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+<title>{{request.site.name}} - Add Products</title>
+<meta name="description" 
+      content="Aquaria Supplies European supplier of aquarium products including salt and fresh water.
+      Irish supplier of Hanna Instruments, Modern Reef and Vyair products."/>
+<meta name="keywords" 
+      content="aquaria supplies, hanna instruments, vyair, modern reef, reef test kits, reef and coral additives"/>
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">

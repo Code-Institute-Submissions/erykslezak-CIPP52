@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+<title>{{request.site.name}} - Edit Product - {{ product.name }}</title>
+<meta name="description" content="{{ product.seo_description }}"/>
+<meta name="keywords" content="{{ product.seo_keywords }}" />
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">

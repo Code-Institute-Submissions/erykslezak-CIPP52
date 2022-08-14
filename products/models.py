@@ -21,6 +21,8 @@ class Product(models.Model):
                                  on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
+    seo_keywords = models.TextField(null=True, blank=True)
+    seo_description = models.TextField(null=True, blank=True)
     short_description = models.TextField()
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
