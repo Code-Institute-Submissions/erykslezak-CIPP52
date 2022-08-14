@@ -23,7 +23,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     seo_keywords = models.TextField(null=True, blank=True)
     seo_description = models.TextField(null=True, blank=True)
-    short_description = models.TextField()
+    short_description = models.TextField(blank=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
