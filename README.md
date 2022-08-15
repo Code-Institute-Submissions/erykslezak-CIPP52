@@ -150,6 +150,7 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 - There is also contact details including phone number and opening hours.
 
 ![Top Nav](docs/features/top-nav.png)
+![Search](docs/features/search-bar.png)
 
 **Footer**
 
@@ -230,3 +231,32 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 
 ![Add/Edit Products 1](docs/features/add-product-1.png)
 ![Add/Edit Products 2](docs/features/add-product-2.png)
+
+**Alert Messages**
+
+- Users will get alerted by pop up messages depending on their actions.
+- Message pop up are generated as either successful, warning, error and info messages.
+
+![Success Message](docs/features/success-message.png)
+
+**Deleting Products**
+
+- If user is an admin, on each product there will be two additional link buttons for editing and deleting products.
+- Once user presses delete, the product gets automatically removed from the shop.
+
+**Account Management**
+
+- Login, logout, registeration and all other options such as account recovery, email confirmation etc. all work via Allauth.
+- Users need to confirm their accounts before accessing the store.
+
+## **Features still to implement**
+
+<span id="features-future"></span>
+
+- Add more user control over their own accounts such as changing their passwords.
+- Add more details to search auto complete such as product image and the price.
+- From the search bar, when click on a product, bring user to the products page.
+- Add product variations so each variation will have different sizes depending on bottle/bucket size.
+- Add product stock so users are able to find out if the products they are purchasing are in stock.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
