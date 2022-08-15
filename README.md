@@ -258,5 +258,35 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 - From the search bar, when click on a product, bring user to the products page.
 - Add product variations so each variation will have different sizes depending on bottle/bucket size.
 - Add product stock so users are able to find out if the products they are purchasing are in stock.
+- Slugs for each product for better SEO.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+# Technologies
+
+<span id="technologies"></span>
+
+### **Main Languages Used**
+- HTML5
+- CSS
+- Python
+- JavaScript
+- jQuery
+
+### **Frameworks, Libraries and Programs Used**
+- Django
+- Heroku
+- PostgreSQL
+- Bootstrap
+- Amazon Web Services for static and media files.
+- Fontawesome
+- Crispy Forms
+- Pillow
+- Stripe
+- Psycopg2
+- DJ-database-url
+- Boto3
+- GitHub
+- GitPod
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
