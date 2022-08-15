@@ -116,3 +116,19 @@ The wireframes were successfully converted into a live functioning website acros
 The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, can be accessed [here](wireframes/).
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+## **Design**
+
+<span id="ux-design"></span>
+
+### **Colour Scheme**
+
+After looking through different e-commerce shops related to fish/corals, I concluded that the best color scheme would be a simple **plain white background with blue accents**. The below is the colours I have used the most.
+
+![Coolors](docs/aquaria-supplies-coolors.png)
+
+### **Typography**
+
+For fonts I decided to go with something that is simple and elegant. The fonts are as follows, Lato and Sans-serif. I think it gives site nice and clear look and ease of readability.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
