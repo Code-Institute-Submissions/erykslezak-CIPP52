@@ -176,3 +176,57 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 - If user is an admin then option for deleting/editing product is also available under each product.
 
 ![Products](docs/features/products.png)
+
+**Products Detail Page**
+
+- Product detail page contains all information regarding the product.
+- The image, name, price, sku, short description, quantity and main description are visible to the user if they were added in the backend for given product.
+- Users can change quantity of the product before they add it to the cart
+
+![Products Details](docs/features/products-details.png)
+
+**Shopping Cart**
+
+- List of all products that were added by the user.
+- Abilit to update quantity in the cart as well as removing the product.
+- The subtotal for each product, subtotal of the cart and then total including the delivery is given to the user.
+- Buttons to either proceed to the payment page or go back to shop.
+
+![Cart](docs/features/cart.png)
+
+**Checkout Page**
+
+- Form for user to input their details including delivery address and payment field for debit/credit card.
+- Order summary including total quantity of products in cart.
+- Each product and their current quantity and subtotal.
+- The order total before and after delivery charges have been applied.
+- Buttons to either complete the order or go back to the cart to adjust it.
+
+![Checkout Page](docs/features/checkout.png)
+
+**Checkout Success Page**
+
+- Order information that will be sent to given email.
+- Details of the order including users address, order number, date and the totals.
+- Button to go back shopping.
+
+![Checkout Success Page](docs/features/checkout-success.png)
+
+**User Profile**
+
+- Form for user to input and save their details such as delivery address and their name.
+- Button to submit and update users details.
+- Order history with order number linked to order success page as above. The date, products and the total.
+
+![Profile](docs/features/profile.png)
+
+**Add/Edit Products**
+
+- Form for admin to input new product details.
+- Fields for name, description and price are required. Additional fields such as short description, image or sku are optional but recommended.
+- Two additional SEO fields, keywords and descriptions for admins to add per each product as desired.
+- Button to either add or update existing product.
+- If the form is to edit product then all fields will be prepopulated.
+
+![Add/Edit Products 1](docs/features/add-product-1.png)
+![Add/Edit Products 2](docs/features/add-product-2.png)
