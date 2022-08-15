@@ -10,8 +10,8 @@
 
 - <a href="#context">Context</a>
 - <a href="#ux">UX</a>
+  - <a href="#ux-iud">Ideal User Demographic</a>
   - <a href="#ux-stories">User stories / Strategy</a>
-  - <a href="#ux-scope">Scope</a>
   - <a href="#ux-structure">Structure</a>
   - <a href="#ux-wireframes">Wireframes</a>
   - <a href="#ux-design">Design</a>
@@ -42,6 +42,35 @@ Aquaria Supplies is an online and physical shop located in Dublin 12. They suppl
 
 # **UX**
 
+## **Ideal User Demographic**
+
+<span id="ux-iud"></span>
+
+The ideal users of this website are:
+- Fish and Coral hobbyists
+- People looking to get into coral/fish
+
+**Strategy** was broken into three categories.
+  - Roles
+    - Site User
+    - Site Admins
+  - Demographic
+    - Young to mature adults
+    - Gifts givers
+
+The website needs to enable the **Site User** to
+- Find products that are required to start or upgrade their current aquariums.
+- Add their desired products to cart where they can purchase them.
+- Filter products throughout the site accordingly to **Users** needs.
+- Search products by name, sku or description.
+- Modify profile to save their default shipping details and preview past orders.
+
+The website needs to enable the **Site Admin** to
+- Add, edit and remove products on the site.
+- View placed orders from admin dashboard.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
 <span id="ux-stories"></span>
 
 ## **User stories / Strategy**
@@ -70,4 +99,20 @@ The below MOSCOW table consists of user stories with story points and MOSCOW pri
 |18                                                                |Admin   |Delete product                           |Remove products that are no longer for sale.                                                                        |4           |Should HaveHave|
 |                                                                  |          |                                                                      |Total Story Points                                                                                                  |73         |           |
 
-[Back to top](#)
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+## **Structure**
+
+<span id="ux-structure"></span>
+
+
+
+## **Wireframes**
+
+<span id="ux-wireframes"></span>
+
+The wireframes were successfully converted into a live functioning website across all devices.
+
+The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, can be accessed [here](wireframes/).
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
