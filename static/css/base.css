@@ -13,7 +13,6 @@ body {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
 }
 
 #mc_embed_signup > form {
@@ -152,6 +151,10 @@ input[type=number] {
     font-weight: bold;
     font-size: 1.8rem;
  }
+
+ .search-mobile {
+    display: none;
+}
 
 /* Back to top button */
 .btt-button {
@@ -388,6 +391,10 @@ input[type=number] {
 
     .mobile-width {
         width: 50%;
+    }
+
+    .search-mobile {
+        display: block !important;
     }
 }
 

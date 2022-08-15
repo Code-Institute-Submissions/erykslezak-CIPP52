@@ -1,32 +1,24 @@
 <ul class="navbar-nav collapse navbar-collapse mr-5" id="main-nav">
-    <li class="nav-item d-block d-lg-none mx-2">
+    <li class="search-mobile border-0 w-100 pb-1 rounded-0 my-0" aria-labelledby="mobile-search">
+        <form class="form" method="GET" action="{% url 'products' %}">
+            <div class="input-group w-100">
+                <input class="form-control border border-black rounded-0" type="text" id="autoC" name="q" placeholder="Search...">
+                <div class="input-group-append">
+                    <button class="form-control form-control btn btn-main border border-black rounded-0" type="submit">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </li>
+    <li class="nav-item d-block d-lg-none mx-2 mr-auto">
         <a class="text-uppercase font-weight-bold nav-link mr-5" href="{% url 'home' %}" id="home-link">
             Home
         </a>
     </li>
-    <li>
-        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-            <form class="form" method="GET" action="{% url 'products' %}">
-                <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search...">
-                    <div class="input-group-append">
-                        <button class="form-control form-control btn btn-main border border-black rounded-0" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-            <a class="text-black nav-link" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="text-center">
-                    <div><i class="fas fa-search fa-lg"></i></div>
-                    <p class="my-0">Search</p>
-                </div>
-            </a>
-        </div>
-    </li>
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown mr-auto">
         <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             All Products
         </a>
@@ -37,19 +29,19 @@
         </div>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item mr-auto">
         <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="{% url 'products' %}?category=accessories" id="accessories-link" aria-haspopup="true" aria-expanded="false">
             Accessories
         </a>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item mr-auto">
         <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="{% url 'products' %}?category=lighting" id="lighting-link" aria-haspopup="true" aria-expanded="false">
             Lighting
         </a>
     </li>
 
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown mr-auto">
         <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="#" id="water-care-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Water Care
         </a>
@@ -59,7 +51,7 @@
         </div>
     </li>
 
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown mr-auto">
         <a class="text-uppercase font-weight-bold nav-link nav-color mx-2" href="#" id="test-kits-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Test Kits
         </a>
