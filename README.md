@@ -16,7 +16,6 @@
   - <a href="#ux-wireframes">Wireframes</a>
   - <a href="#ux-design">Design</a>
 - <a href="#features">Features</a>
-  - <a href="#features-design">Design Features</a>
   - <a href="#features-existing">Existing Features</a>
   - <a href="#features-future">Still to implement</a>
 - <a href="#technologies">Technologies Used</a>
@@ -132,3 +131,48 @@ After looking through different e-commerce shops related to fish/corals, I concl
 For fonts I decided to go with something that is simple and elegant. The fonts are as follows, Lato and Sans-serif. I think it gives site nice and clear look and ease of readability.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+<span id="features"></span>
+
+# Features
+
+## Existing Features
+
+<span id="features-existing"></span>
+
+### **Every page consits of top navigation bar with consitent and responsive design.**
+
+**Navigation Bar**
+
+- The top navigation bar contains a site logo which brings user back to index page. A search bar to search throughout all products with auto complete popups and account management buttons such as log in, log out, register and my profile.
+- There is a sticky bar containing information regarding of how much needs to be spend to get free shipping.
+- There is a navigation throughout all the categories. Some categories are dropdowns and you can also sort all products by price or category.
+- There is also contact details including phone number and opening hours.
+
+![Top Nav](docs/features/top-nav.png)
+
+**Footer**
+
+- Footer is divided into two sections, social and newsletter.
+- Social brings you directly to facebook page whereas newsletter lets you subscribe to newsletter to get notified of latest offers.
+
+![Footer](docs/features/footer.png)
+
+**Home Page**
+
+- List of products sorted in order of newest being first.
+- Every product preview consists of product image, category, name and price.
+- If user is an admin then option for deleting/editing product is also available under each product.
+
+![Home Page](docs/features/index.png)
+
+**Products / Category Page**
+
+- List of all products or sorted by categories.
+- Sort by button which lets user sort all products on current page by category, name and price.
+- Top of page is treated as breadcrumbs with current category chosen.
+- Top left corner of page gives user product count in current selected category and a link to preview all products.
+- Every product preview consists of product image, category, name and price.
+- If user is an admin then option for deleting/editing product is also available under each product.
+
+![Products](docs/features/products.png)

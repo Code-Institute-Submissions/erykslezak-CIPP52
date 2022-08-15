@@ -43,7 +43,7 @@ body {
 }
 
 .btn-main {
-    background: #007bff;
+    background: #007bff !important;
     color: white;
 }
 
@@ -53,7 +53,7 @@ body {
 .btn-main:hover,
 .btn-main:active,
 .btn-main:focus {
-    background: #005bcc;
+    background: #005bcc !important;
     color: white;
 }
 
