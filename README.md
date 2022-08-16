@@ -635,3 +635,133 @@ By forking the GitHub Repository you will be able to clone it to your own GitHub
 - Press Enter and your local clone will be created.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+## Getting Stripe keys
+
+- Register for free on Stripe and once you are verified and logged in press on **developers tab**.
+- From here you should be able to find your **Secret Key** and **Public Key**.
+- For last needed key go to **Webhooks** and add your own new Endpoint.
+- As URL, paste in either you local or deployed URL.
+- Add all events and then click on **Add Endpoint** at bottom of the page. You should now be redirected to endpoints page.
+- On top now you should be able to reveal your **WH Secret Key**.
+- The 3 keys should now be pasted as variables in heroku.
+
+## Getting Email setup
+
+- To setup emails you need to create new or use existing Gmail account.
+- Once you log into head into Settings from your gmail view and press **See all settings**.
+- On top now head into Accounts and imports. Scroll down and look for **Other google account settings**.
+- Go into Security, enable two factor authentication and follow instructions.
+- Once completed go back to security, click on **App passwords**, select Mail - Device - Django and copy your new password.
+- This password will go into Heroku as variable **EMAIL_HOST_PASS** and your actual email as **EMAIL_HOST_USER**.
+
+## Setting up AWS
+
+- Creating Bucket
+    - Go to **Amazon Web Services** page and register or login.
+    - Once you are fully logged and in console page, in search on top look for **S3**, click on it.
+    - Press on the bright orange button **Create Bucket** on right hand side.
+    - Put in your desired bucket name (preferably your heroku app name) and select region closet to you.
+    - Enabled ACLs in Object Ownership section and uncheck **Block all public access** in section below.
+    - Acknowledge current settings and on bottom of the page press on **Create bucket**.
+- Modifying your bucket
+    - Access your newly created bucket by clicking on it.
+    - On top you should now be able to see **Properties** tab, click on it.
+    - Scroll all the way down to **Static website hosting**. Once you find it click Edit on the side.
+    - Enable it and in **Index document**, put in 'index.html' and in **Error document** put in 'error.html'. Apply changes.
+    - Now access **Permissions** tab and scroll down till you see **Cross-origin resource sharing (CORS)**. Press edit.
+    - Copy the following code and paste it in and save it.
+    ```
+    [
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+    ]
+    ```
+    - Now scroll back up to **Bucket policy**, press edit, copy your **ARN** and click on **AWS Policy Generator**.
+    - In Step 1, select your Policy as **S3 Bucket Policy**.
+    - In Step 2, in Principal field put in * (star). In actions select **GetObject**, paste in your ARN and click **Add Statement**.
+    - In Step 3, click on Generate Policy and copy the code you are given.
+    - Go back to your **Bucket policy**, paste in the code.
+    - In the code find **"Resource"** where you shoud see your ARN. At the end of your ARN add the following: /*
+    - Click on save changes.
+    - Go back to **Permissions** menu and press edit by **Access control list (ACL)**.
+    - Under Everyone **(public access)**, tick List and save it.
+- Identity and Access Management (IAM)
+    - User Group
+        - Head back to main console and search for IAM, access it.
+        - On left hand side, click on User groups and create group.
+        - Call your group **manage-your-app-name** and on bottom click Create group.
+    - Policy
+        - On left hand side, click on Policies and **Create policy**.
+        - In top right corner click **Import managed policy**. Search for "AmazonS3FullAccess", tick the box and press Import.
+        - Once imported head to **JSON** tab and paste in your **ARN** where "Resource" is as before.
+        - In the Resource section, create a list containing two elements, "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and folders in the bucket.
+        - Click on Next Tags, Next Review and add your policy name and description. Once you are happy click **Create policy**.
+    - Attaching Policy
+        - Head back to your newly created group. Open **Permissions* tab on top. Click on Add permissions and attach policy.
+        - Find your policy, tick the box and on the bottom of page click on **Add permissions**.
+    - Create User
+        - On left hand side click on **Users** and press Add users.
+        - As username call it, "your-app-name-staticfiles-user". Check the **Access key** option and press the **Next: Permissions** button.
+        - Tick the group you have created earlier and press **Next: Tags**, **Next: Review** and **Create User**.
+        - Download the .csv file.
+- Connecting Django to AWS.
+    - In CLI install the following, **boto3** and **django-storages**. Freeze requirements if it hasn't been done before.
+    - Add storages to installed apps in your settings.py and then paste the code below.
+    ```
+    if 'USE_AWS' in os.environ:
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'BUCKET NAME'
+    AWS_S3_REGION_NAME = 'YOUR CHOSEN REGION'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+    ```
+    - Head back to Heroku to set up enviromental variables.
+    - Open the CSV file you have downloaded before as it contains keys that will need to be put into Heroku.
+    - Copy the **Access Key ID**, **Secret Access Key** and add them as variables in Heroku.
+    - Also create a variable, **USE_AWS** with value of True and remove **DISABLE_COLLECTSTATIC** if it hasn't been done before.
+    - Create new python file in root directory called **custom_storages.py**. In that file paste the following code.
+    ```
+    from django.conf import settings
+    from storages.backends.s3boto3 import S3Boto3Storage
+
+
+    class StaticStorage(S3Boto3Storage):
+        location = settings.STATICFILES_LOCATION
+
+
+    class MediaStorage(S3Boto3Storage):
+        location = settings.MEDIAFILES_LOCATION
+
+    ```
+    - Go back to your settings.py and paste the following code under AWS settings.
+    ```
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    ```
+    - Head back to your S3 bucket. Create new folder called **media**.
+    - Within the folder click Upload and select all of your media files.
