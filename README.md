@@ -360,4 +360,218 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 
 ### Code Validation
 
-- The W3C Validator was used to validate **html** and **css** code. The PEP8 Python Validator was used for **python** code.
+- The W3C Validator was used to validate **html** and **css** code. The PEP8 Python Validator was used for **python** code. The following files were tested successfully.
+
+<details>
+<summary>HTML Pages - HTML W3C Validation</summary>
+
+**Index**
+
+![HTML results - index](docs/code-validations/html/index.png)
+
+**Products**
+
+![HTML results - products](docs/code-validations/html/products.png)
+
+**Products Details**
+
+![HTML results - products-details](docs/code-validations/html/products-details.png)
+
+**Cart**
+
+![HTML results - cart-3-products](docs/code-validations/html/cart-3-products.png)
+
+**Checkout**
+
+![HTML results - checkout](docs/code-validations/html/checkout.png)
+
+**Checkout Success**
+
+![HTML results - checkout-success](docs/code-validations/html/checkout-success.png)
+
+**Userprofile**
+
+![HTML results - userprofile](docs/code-validations/html/userprofile.png)
+
+**Add Product**
+
+![HTML results - add-product](docs/code-validations/html/add-product.png)
+
+**Edit Product**
+
+![HTML results - edit-product](docs/code-validations/html/edit-product.png)
+</details>
+<br>
+<details>
+<summary>CSS Stylesheets - CSS W3C Validation</summary>
+
+**Base CSS**
+
+![CSS results - base-css](docs/code-validations/css/base-css.png)
+
+**Checkout CSS**
+
+![CSS results - checkout-css](docs/code-validations/css/checkout-css.png)
+
+**Profile CSS**
+
+![CSS results - profile-css](docs/code-validations/css/profile-css.png)
+</details>
+<br>
+<details>
+<summary>JavaScript - JSHint Validation</summary>
+
+**Countryfield JS**
+
+![CSS results - base-css](docs/code-validations/js/countryfield.png)
+
+**Stripe Element JS**
+
+![CSS results - checkout-css](docs/code-validations/js/stripe-element.png)
+</details>
+<br>
+
+#### **Python PEP8**
+- Cart
+    <details>
+    <summary>Cart App - PEP8 Validation</summary>
+
+    **Contexts**
+
+    ![Cart results - contexts](docs/code-validations/py/cart-app/contexts.png)
+
+    **URLs**
+
+    ![Cart results - urls](docs/code-validations/py/cart-app/urls.png)
+
+    **Views**
+
+    ![Cart results - views](docs/code-validations/py/cart-app/views.png)
+    </details>
+    <br>
+- Checkout
+    <details>
+    <summary>Checkout App - PEP8 Validation</summary>
+
+    **Admin**
+
+    ![Checkout results - admin](docs/code-validations/py/checkout-app/admin.png)
+
+    **APPs**
+
+    ![Checkout results - apps](docs/code-validations/py/checkout-app/apps.png)
+
+    **Forms**
+
+    ![Checkout results - forms](docs/code-validations/py/checkout-app/forms.png)
+
+    **Models**
+
+    ![Checkout results - models](docs/code-validations/py/checkout-app/models.png)
+
+    **Signals**
+
+    ![Checkout results - signals](docs/code-validations/py/checkout-app/signals.png)
+
+    **URLs**
+
+    ![Checkout results - urls](docs/code-validations/py/checkout-app/urls.png)
+
+    **Views**
+
+    ![Checkout results - views](docs/code-validations/py/checkout-app/views.png)
+
+    **Webhook Handler**
+
+    ![Checkout results - webhook-handler](docs/code-validations/py/checkout-app/webhook-handler.png)
+
+    **Webhooks**
+
+    ![Checkout results - webhooks](docs/code-validations/py/checkout-app/webhooks.png)
+    </details>
+    <br>
+- Home
+    <details>
+    <summary>Home App - PEP8 Validation</summary>
+
+    **URLs**
+
+    ![Home results - urls](docs/code-validations/py/home-app/urls.png)
+
+    **Views**
+
+    ![Home results - views](docs/code-validations/py/home-app/views.png)
+    </details>
+    <br>
+- Products
+    <details>
+    <summary>Products App - PEP8 Validation</summary>
+
+    **Admin**
+
+    ![Products results - admin](docs/code-validations/py/products-app/admin.png)
+
+    **Forms**
+
+    ![Products results - forms](docs/code-validations/py/products-app/forms.png)
+
+    **Models**
+
+    ![Products results - models](docs/code-validations/py/products-app/models.png)
+
+    **URLs**
+
+    ![Products results - urls](docs/code-validations/py/products-app/urls.png)
+
+    **Views**
+
+    ![Products results - views](docs/code-validations/py/products-app/views.png)
+
+    **Widgets**
+
+    ![Products results - urls](docs/code-validations/py/products-app/widgets.png)
+    </details>
+    <br>
+- Userprofile
+    <details>
+    <summary>Userprofile App - PEP8 Validation</summary>
+
+    **Forms**
+
+    ![Userprofile results - forms](docs/code-validations/py/userprofile-app/forms.png)
+
+    **Models**
+
+    ![Userprofile results - models](docs/code-validations/py/userprofile-app/models.png)
+
+    **URLs**
+
+    ![Userprofile results - urls](docs/code-validations/py/userprofile-app/urls.png)
+
+    **Views**
+
+    ![Userprofile results - views](docs/code-validations/py/userprofile-app/views.png)
+    </details>
+    <br>
+- Aquaria Supplies
+    <details>
+    <summary>Aquaria Supplies - PEP8 Validation</summary>
+
+    **URLs**
+
+    ![Aquaria Supplies results - urls](docs/code-validations/py/aquaria/urls.png)
+
+    **Views**
+
+    ![Aquaria Supplies results - views](docs/code-validations/py/aquaria/views.png)
+    </details>
+    <br>
+- Other
+    <details>
+    <summary>Other .PY Files - PEP8 Validation</summary>
+
+    **Custom Storages**
+
+    ![Custom Storages results](docs/code-validations/py/custom-storages.png)
+    </details>
+    <br>
