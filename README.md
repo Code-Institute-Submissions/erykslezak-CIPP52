@@ -354,3 +354,10 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 - Sort by button works for each option.
 - Facebook link brings user to facebook page and newsletter gets user signed up successfully.
 
+## Testing Automated
+
+<span id="testing-automated"></span>
+
+### Code Validation
+
+- The W3C Validator was used to validate **html** and **css** code. The PEP8 Python Validator was used for **python** code.

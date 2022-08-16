@@ -64,7 +64,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" id="autoC" name="q"
+                        <input class="form-control border border-black rounded-0 autoC" type="text" name="q"
                             placeholder="Search...">
                         <div class="input-group-append">
                             <button class="form-control btn btn-main border border-black rounded-0" type="submit">
@@ -195,10 +195,6 @@
                                         <div class="clear foot">
                                             <input type="submit" value="Subscribe" name="subscribe"
                                                 id="mc-embedded-subscribe" class="button btn-main">
-                                            <p class="brandingLogo"><a href="http://eepurl.com/h8NwKb"
-                                                    title="Mailchimp - email marketing made easy and fun"><img
-                                                        src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +217,7 @@
                     "{{ product.name }}",
                 {% endfor %}
             ];
-            $("#autoC").autocomplete({
+            $(".autoC").autocomplete({
                 source: availableProducts
             });
         } );
