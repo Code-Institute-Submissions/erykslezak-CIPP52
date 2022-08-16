@@ -765,3 +765,16 @@ By forking the GitHub Repository you will be able to clone it to your own GitHub
     ```
     - Head back to your S3 bucket. Create new folder called **media**.
     - Within the folder click Upload and select all of your media files.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+<span id="credits"></span>
+
+# Credits
+
+- The project was based on the example of Boutique Ado from Code Institute. With much more ahead of me to bring it to fully functional store with many more features, long road ahead of me.
+
+- [Stack Overflow](https://stackoverflow.com/) - Many issues I have googled brought me there with explanations and solutions.
+- [W3 Schools](https://www.w3schools.com/) - Best resource when it comes to attributes etc. Used it many times and without it I would be more confused.
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Helped me so much with all different classes etc.
+- [Google](https://www.google.com/)
