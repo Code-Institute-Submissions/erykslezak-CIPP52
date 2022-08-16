@@ -340,3 +340,17 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
   - I have also tested this via the index/products page.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+## Testing Manual
+
+<span id="testing-manual"></span>
+
+- Navigation works on every page.
+- All pages are responsive for all large, medium and small screens.
+- Once you log in, the nav bar changes from log in and sign up button to a button with log out and edit account options. If you an admin then you also get option for adding products.
+- All products contain edit/delete anchors through all products pages if the user is an admin.
+- All buttons on the website are clickable and bring you to correct pages.
+- If the user is not logged in certain things become not visible and pages not accessible.
+- Sort by button works for each option.
+- Facebook link brings user to facebook page and newsletter gets user signed up successfully.
+
