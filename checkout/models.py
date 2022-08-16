@@ -9,6 +9,8 @@ from userprofile.models import UserProfile
 
 
 def increment_order_number():
+    """ Increments order numbers """
+
     last_order = Order.objects.all().order_by('id').last()
     if not last_order:
         return 'ORD0001'

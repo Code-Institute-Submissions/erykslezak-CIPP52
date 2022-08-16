@@ -8,6 +8,7 @@ class OrderLineItemAdminInline(admin.TabularInline):
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """ Modifies admin table view for orders """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',

@@ -3,6 +3,7 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """ Modifies admin table view in dashboard """
     list_display = (
         'sku',
         'name',

@@ -5,7 +5,7 @@ from products.models import Product
 
 
 def cart_contents(request):
-
+    """ Function that calculates the total cost of the cart """
     cart_items = []
     total = 0
     product_count = 0
