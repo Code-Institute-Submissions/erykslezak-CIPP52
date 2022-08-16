@@ -574,4 +574,64 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 
     ![Custom Storages results](docs/code-validations/py/custom-storages.png)
     </details>
-    <br>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+<span id="testing-bugs"></span>
+
+## **Known bugs**
+
+Search Bar
+- Currently search bar works fine except when you are on a product page. When you are on product page then results do not pop up. Searching by pressing the button or enter still works but autocomplete does not.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+<span id="deployment"></span>
+
+# Deployment
+
+- The project has been developed using GitPod. The code has been committed along and pushed to GitHub.
+
+## Deploying on Heroku
+To deploy this project to Heroku from it's GitHub repository, the following steps were taken.
+
+- Create the Heroku App
+  - Before creating the app please make sure the project has following files.
+    - **requirements.txt** - to create this file, copy and paste the following within the terminal **'pip3 freeze --local >requirements.txt'**.
+    - Procfile also needs to be created and that is done by the following command, **'python run.py > Procfile'**.
+      - Add inside **web: gunicorn PROJ_NAME.wsgi**
+  - Press **Create new app** button.
+  - Search for **"Postgres"** within the Resources tab and select the **Heroku Postgres** option.
+- Heroku Config Vars
+  - Create a new key and value inside **Config Vars** on Herokus page. The key being called **SECRET_KEY** with your chosen value.
+- Create and update the **settings.py** file.
+  - Update ALLOWED_HOSTS with ['app_name.heroku.com','localhost']
+  - Migrate your project by using the following command in CLI, **python3 manage.py migrate**
+- Deploy to Heroku
+  - Go to **Deploy** in the menu bar.
+  - In section Deployment method select GitHub.
+  - Press on **Connect to GitHub**
+    - Search for your project repo.
+    - Connect to your project repo.
+  - In Automatic Deploys section click **Enble automatic deploys**.
+  - Click Deploy Branch
+  - Wait a minute or two and you should see message that app was successfully deployed.
+
+## Forking the GitHub Repository
+By forking the GitHub Repository you will be able to clone it to your own GitHub account allowing you to modify it and make any changes without affecting the main repository. Follow the steps below.
+
+- While you are logged in GitHub look for desired repository such as this one.
+- At the top of the repository (top right corner) you should be able to see **Fork** button.
+- By pressing it, you should get a clone of the original repository.
+
+## Making a Local Clone
+
+- While you are logged in GitHub look for desired repository such as this one.
+- Under main menu you should be able to see **Code** dropdown button. Click on it.
+- To clone the repository using HTTPS, under HTTPS copy the link.
+- Open CLI on your computer.
+- Change the directory to where you want the repository to be located.
+- Type **git clone** and then paste URL copied from steps above.
+- Press Enter and your local clone will be created.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
