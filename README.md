@@ -290,3 +290,53 @@ For fonts I decided to go with something that is simple and elegant. The fonts a
 - GitPod
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+# Testing
+
+## User Stories
+
+<span id="testing-stories"></span>
+
+- As a **Shopper** I want to be able to view a list of products so that I can purchase them.
+  - To test this shopper story I have created products through importing data via CLI. I then accessed the website to see if all imported products will be visible.
+- As a **Shopper** I want to be able to access products so that I can preview them and find out more details.
+  - To test this shopper story I have opened open one of my products to see if it will bring me to the products page. I then was able to see each information that I wanted to be able to see in nice and clean way.
+- As a **Shopper** I want to be able to search for products so that I can find specific product I am looking for.
+  - To test this shopper story I clicked on search bar and I wrote down a product name. I was then given results as a pop up (autocomplete). I then pressed either 'Enter' or search button and all the results were displayed containing my keywords.
+- As a **Shopper** I want to be able to select products categories so that I can see prodcuts that interest me the most.
+  - To test this shopper story I have clicked on one of the categories in the nav bar section of the page. It then brought me to a category page with products visible for given category.
+  - Some of these are categories are accessible as dropdowns so I have tested them also.
+- As a **Shopper** I want to be able to view the total of all products in my cart so that I can avoid spending too much.
+  - To test this shopper story I have added multiple products to my cart through adding them via products page. I then clicked on the cart button which brought me to cart page. I was given the subtotals and total of my whole cart in euros.
+- As a **Shopper** I want to be able to increase or decrease product quantities so that I can avoid buying too many or buy more if I want to.
+  - To test this shopper story I accessed product page where I was able to see current product quantity. By the form on each side there is either a 'minus' or 'plus' sign which either increases or decreases the product quantity.
+  - I have also tested this in the cart page for each product that is currently within my cart.
+- As a **Shopper** I want to be able to remove products from my cart so that I can avoid buying products I have added to my cart by an accident.
+  - To test this shopper story I accessed the cart page where then I was able to see a 'delete' anchor element where if pressed, removed the product from my cart.
+- As a **Shopper** I want to be able to see alert messages so that I can know of any issues I am currently experiencing.
+  - To test this shopper story I added products to my cart where I was notified by a box pop up with a success message alerting me of product being added to my cart and the total.
+  - I also tested this with updating/removing products, updating my profile details and using any other form throughout the site.
+- As a **Shopper** I want to be able to use Stripe as my payment method so that I can safely proceed with checkout.
+  - To test this shopper story I have added products to my cart where then from the cart page I proceed to the checkout page. I filled out all the details in order to test if Stripe is working correctly. The order went through and via Stripe dashboard I was able to see that everything went through successfully too.
+- As a **User** I want to be able to register an account so that I can preview my previous orders and edit my details.
+  - To test this user story I accessed the registeration page where I filled out all neccessary fields and submit the form. I was notified that account has been created successfully.
+- As a **User** I want to be able to login or logout so that I can access my personal information.
+  - To test this user story I have logged in and logged out via the main menu using freshly created account. I was brought to different page depending on the user action I was doing and notified by pop up alerts if anything has gone wrong.
+- As a **User** I want to be able to request new password in case I lose it so that I can recover my account.
+  - To test this user story I pressed on anchor element, 'forgot password' on login page. It brought me to page where I had to input my email I used while I was registering. I then was sent an email with recovery instructions.
+- As a **User** I want to be able to edit a form so that I can update my profile details.
+  - To test this user story I logged into my account and proceed to my profile page via the nav bar. I then was able to input my name and my address so that I would not have to do it again on my next orders. I have saved my details and proceed through cart to checkout page where I could see everything prepopulated.
+- As a **User** I want to be able to access my profile so that I can preview my past orders.
+  - To test this user story I created an order that was placed successfully. I then went to my profile page where I was able to see my previous order including details such as order number, date, products and total cost.
+- As a **User** I want to be able to receive an email after registeration so that I can verify my account.
+  - To test this user story I made a new account. I was then sent an email with a link to verify my account.
+- As an **Admin** I want to be able to add products.
+  - To test this admin story I logged in as an admin (superuser). I then hovered over nav bar where I could see a button 'Add products'. By clicking it, it brought me to a page where I could fill out all fields regarding new products including adding product image. I created a test product and it was posted successfully to the main site.
+- As an **Admin** I want to be able to edit products so that I can update existing information.
+  - To test this admin story I accessed product page where I could press anchor element 'Edit'. I pressed it and it brought me to an edit page with all fields prepopulated ready for editing.
+  - I have also tested it via the main products view list throughout the site by either accessing categories or having all pages listed on index/products page.
+- As an **Admin** I want to be able to delete products so that I can remove products that are no longer for sale.
+  - To test this admin story I accessed product page where I could press anchor element 'Delete'. I pressed it on a dummy product which then got removed successfully and I got prompted by an alert message.
+  - I have also tested this via the index/products page.
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
