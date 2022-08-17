@@ -15,6 +15,7 @@
   - <a href="#ux-structure">Structure</a>
   - <a href="#ux-wireframes">Wireframes</a>
   - <a href="#ux-design">Design</a>
+- <a href="#agile">Agile</a>
 - <a href="#features">Features</a>
   - <a href="#features-existing">Existing Features</a>
   - <a href="#features-future">Still to implement</a>
@@ -104,7 +105,16 @@ The below MOSCOW table consists of user stories with story points and MOSCOW pri
 
 <span id="ux-structure"></span>
 
+### **Flowchart**
+I've created a flow chart to help me visualize what navigation should feel like. It simplifies the website and lets users navigate throughout the site with ease and efficiency.
 
+![Site Flowchart](docs/aquaria-supplies-flowchart.png)
+
+### **Database**
+
+I have made diagram with the database scheme to guide me throughout the site progression. The diagrams below show relationships between each database models as the site was being developed. Postgresql provided by Heroku is used in production.
+
+![Database Diagram](docs/aquaria-supplies-database.png)
 
 ## **Wireframes**
 
@@ -131,6 +141,15 @@ After looking through different e-commerce shops related to fish/corals, I concl
 For fonts I decided to go with something that is simple and elegant. The fonts are as follows, Lato and Sans-serif. I think it gives site nice and clear look and ease of readability.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+<span id="agile"></span>
+
+# Agile
+
+![Agile](docs/github-project.png)
+
+A link to the project with all issues can be found [here](https://github.com/users/erykslezak/projects/1)
+GitHub Issues were used to list user stoires. manage and plan the implementation of all functionalities throughout the project. I started off with **Shopper** stories first followed by **users** and **admins**. Everything was distributed accordingly on stage of implementation be it **Todo**, **In Progress** or **Done**.
 
 <span id="features"></span>
 
