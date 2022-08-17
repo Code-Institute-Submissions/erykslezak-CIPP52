@@ -25,6 +25,7 @@
   - <a href="#testing-manual">Manual Testing</a>
   - <a href="#testing-automated">Automated Testing</a>
   - <a href="#testing-bugs">Known bugs</a>
+- <a href="#web-marketing">Web Marketing</a>
 - <a href="#deployment">Deployment</a>
 - <a href="#credits">Credits</a>
 
@@ -115,6 +116,8 @@ I've created a flow chart to help me visualize what navigation should feel like.
 I have made diagram with the database scheme to guide me throughout the site progression. The diagrams below show relationships between each database models as the site was being developed. Postgresql provided by Heroku is used in production.
 
 ![Database Diagram](docs/aquaria-supplies-database.png)
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
 ## **Wireframes**
 
@@ -604,6 +607,28 @@ Search Bar
 - Currently search bar works fine except when you are on a product page. When you are on product page then results do not pop up. Searching by pressing the button or enter still works but autocomplete does not.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
+<span id="web-marketing"></span>
+
+# Web Marketing
+
+## **SEO**
+
+The site has a **sitemap.xml** generated and **robots.txt** available in ROOT folder of project.
+
+The meta keywords and descriptions have been updated for SEO purposes. Each product has unique keywords and descriptions related to the product. The rest of site has description and keywords related to the purpose of the e-commerce store.
+All keywords and descriptions were planned out and written by me accordingly to each product.
+
+### **Newsletter**
+
+The footer has been equipped with a form for **Mailchimp** newsletter submissions. It allows users to subscribe to get latest deals and newest arrivals to shop.
+
+### **Facebook**
+
+As of now, social media marketing in the form of Facebook or Instagram is the way to reach out to the comunity. It is the best consistent way to gain new followers and customers. For this project I have created a Facebook page.
+A direct link to our facebook page has been provided in footer which lets users to follow us on the platform and discuss what they would like to see in store.
+
+![Facebook page](docs/facebook.png)
 
 <span id="deployment"></span>
 
