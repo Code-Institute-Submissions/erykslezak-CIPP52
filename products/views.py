@@ -78,6 +78,7 @@ def product_detail(request, product_id):
                 review.rating = rating
                 review.content = content
                 review.save()
+                messages.success(request, 'Successfully added review!')
             else:
                 review = Review.objects.create(
                     product=product,
@@ -87,6 +88,9 @@ def product_detail(request, product_id):
                 )
 
             return redirect('product_detail', product_id=product_id)
+        else:
+            messages.error(request, '''Failed to add review.
+                           Please ensure the form is not empty.''')
 
     context = {
         'product': product,
