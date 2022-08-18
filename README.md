@@ -1,4 +1,4 @@
-# |Aquaria Supplies
+# Aquaria Supplies
 
 **[Live site](https://aquaria-supplies.herokuapp.com/)**
 
@@ -8,7 +8,7 @@
 
 ## Index
 
-- <a href="#context">Context</a>
+- <a href="#introduction">Introduction</a>
 - <a href="#ux">UX</a>
   - <a href="#ux-iud">Ideal User Demographic</a>
   - <a href="#ux-stories">User stories / Strategy</a>
@@ -31,11 +31,25 @@
 
 ---
 
-<span id="context"></span>
+<span id="introduction"></span>
 
-# **Context**
+# **Introduction**
 
 Aquaria Supplies is an online and physical shop located in Dublin 12. They supply the most popular branded products for all fish and corals, be it freshwater or saltwater. They sell anything you would ever need and also provide help with equipment and tank setups.
+
+The site is full B2C e-commerce website. It is direct selling model where consumers buy products from online retailers.
+
+The Stripe payment system has been implemented but is only turned on for **educational purposes** only. Do not enter any personal credit/debit card details.
+
+For any testing purposes please use the details below.
+
+```
+Use card number such as 4242 4242 4242 4242.
+For expiry date use any date in the future such as 01/31.
+For CVC (Three digit), use any sort of numbers.
+```
+
+The above has been taken directly from Stripe documentation.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -97,7 +111,7 @@ The below MOSCOW table consists of user stories with story points and MOSCOW pri
 |15                                                                |Site User |Receive an email after registeration                                   |Verify my account                                       |3           |Could Have|
 |16                                                                |Admin  |Add products                                  |Add new products  |5           |Must Have|
 |17                                                                |Admin   |Edit products                   |Update existing information |4           |Should Have|
-|18                                                                |Admin   |Delete product                           |Remove products that are no longer for sale.                                                                        |4           |Should HaveHave|
+|18                                                                |Admin   |Delete product                           |Remove products that are no longer for sale.                                                                        |4           |Should Have|
 |                                                                  |          |                                                                      |Total Story Points                                                                                                  |73         |           |
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
