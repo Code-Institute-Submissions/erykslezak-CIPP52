@@ -567,6 +567,11 @@ GitHub Issues were used to list user stoires. manage and plan the implementation
 
     ![Products results - urls](docs/code-validations/py/products-app/widgets.png)
     </details>
+
+    **Extend Urlize**
+
+    ![Products results - url_target_blank](docs/code-validations/py/products-app/url_target_blank.png)
+    </details>
     <br>
 - Userprofile
     <details>
