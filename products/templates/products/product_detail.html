@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load url_target_blank %}
 
 {% block extra_meta %}
 <title>{{request.site.name}} - {{ product.name }}</title>
@@ -87,7 +88,7 @@
                 </li>
             </ul>
             <div>
-                <p class="ml-4">{{ product.description|urlize }}</p>
+                <p class="ml-4">{{ product.description|urlize|url_target_blank }}</p>
             </div>
         </div>
     </section>
