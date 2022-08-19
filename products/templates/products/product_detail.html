@@ -35,7 +35,7 @@
             <div class="product-details-container col-7 mt-4 d-table-row">
                 <h2 class="mb-0 product-name">{{ product.name }}</h2>
                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                <p>Rating: {{ product.get_rating }} / 6</p>
+                <p><i class="fa-solid fa-star text-warning"></i>Rating: {{ product.get_rating }} / 6</p>
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_product' product.id %}">Edit</a> |
