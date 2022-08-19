@@ -275,6 +275,13 @@ GitHub Issues were used to list user stoires. manage and plan the implementation
 
 ![Success Message](docs/features/success-message.png)
 
+**Product Reviews**
+
+- Users can leave the reviews on each product with ratings from 1-6 and the comments.
+- If the user resubmits their review, it will overwrite their existing one.
+
+![Product Reviews](docs/features/product-reviews.png)
+
 **Deleting Products**
 
 - If user is an admin, on each product there will be two additional link buttons for editing and deleting products.

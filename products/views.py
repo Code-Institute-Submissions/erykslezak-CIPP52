@@ -71,7 +71,8 @@ def product_detail(request, product_id):
         content = request.POST.get('content')
 
         if content:
-            reviews = Review.objects.filter(created_by=request.user, product=product)
+            reviews = Review.objects.filter(created_by=request.user,
+                                            product=product)
 
             if reviews.count() > 0:
                 review = reviews.first()
