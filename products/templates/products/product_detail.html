@@ -121,7 +121,7 @@
                 <div class="px-4 py-6 bg-white mb-4 text-break">
                     <strong>Rating: </strong>{{ review.rating }}/6
                     <strong>Date:</strong> {{ review.created_at|date:"d-m-y" }}
-                    <strong>Comment:</strong><br>
+                    <strong>Comment: {% if user == review.created_by %} (Your review) {% endif %}</strong><br>
                     {{ review.content }}
                 </div>
                 {% endfor %}
